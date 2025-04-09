@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to right, #5122c8, #60ff00);
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+    .logo img {
+        max-width: 50px;
+    }
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+.main-container {
+    display: flex; /* Используем Flexbox для основного контейнера */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    flex-grow: 1; /* Основной контент занимает оставшееся пространство */
+}
+
+main {
+    max-width: 800px; /* Максимальная ширина основного контента */
+    width: 100%; /* Ширина на всю доступную ширину */
+}
+
+footer {
+    background: linear-gradient(to right, #5122c8, #60ff00);
+    color: white; /* Цвет текста в подвале */
+    padding: 10px 20px; /* Уменьшенные отступы */
+    text-align: center; /* Центрирование текста в подвале */
+}
+
+@media (max-width: 1024px) {
+    .body {
+        font-size: 16px;
+    }
+}
